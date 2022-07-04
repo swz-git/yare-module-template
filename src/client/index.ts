@@ -4,7 +4,7 @@ import html from "./index.html";
 client.injectHtml(html);
 
 // Communication through channels
-import { client } from "../../../yare-module-lib/src";
+import { client } from "yare-module-lib";
 
 client.channels.addEventListener("Example module", (msgs) => {
   client.channels.send("Example module", "Hello from the client!");
